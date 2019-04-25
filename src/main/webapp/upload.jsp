@@ -13,9 +13,13 @@
 </head>
 <body>
 	<form action="upload" method="post" enctype="multipart/form-data">
-	    <input type="file" name="img">
-	    <input type="submit" name="提交">
-	</form><br /> 
+	    <input type="file" name="img" >
+	    <input type="submit" value="图片提交">
+	</form><br />
+	<form action="upload1" method="post" enctype="multipart/form-data">
+		<input type="file" name="doc" >
+		<input type="submit" value="文件提交">
+	</form><br />
 	<c:if test="${filePath!=null }">
 		<h1>上传的图片</h1><br /> 
 		<img width="300px" src="<%=basePath %>${filePath}"/>
